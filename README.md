@@ -23,7 +23,7 @@ mvn clean install
 <dependency>
   <groupId>com.lotaris.minirox.client</groupId>
   <artifactId>rox-jee-itf-maven-plugin</artifactId>
-  <version>2.1.0</version>
+  <version>2.2.0</version>
 </dependenc>
 ```
 
