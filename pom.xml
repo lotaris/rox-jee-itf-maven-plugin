@@ -1,25 +1,25 @@
 
-<project 
-	xmlns="http://maven.apache.org/POM/4.0.0" 
+<project
+	xmlns="http://maven.apache.org/POM/4.0.0"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-	
+
 	<modelVersion>4.0.0</modelVersion>
-	
+
 	<groupId>com.lotaris.maven.rox.plugins</groupId>
-	<artifactId>rox-itf-maven-plugin</artifactId>
-	<version>2.1.0-SNAPSHOT</version>
+	<artifactId>rox-jee-itf-maven-plugin</artifactId>
+	<version>2.2.0</version>
 
 	<packaging>maven-plugin</packaging>
-	
-	<name>Lotaris Maven ROX ITF Plugin</name>
+
+	<name>Lotaris Maven ROX Java EE ITF Plugin</name>
 
 	<properties>
-		<lotaris.rox.maven.commons.version>2.0.1</lotaris.rox.maven.commons.version>
+		<lotaris.rox.maven.commons.version>2.2.0</lotaris.rox.maven.commons.version>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.version>3.0.5</maven.version>
 	</properties>
-	
+
 	<build>
 		<pluginManagement>
 			<plugins>
