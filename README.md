@@ -4,27 +4,19 @@
 
 ## Usage
 
-1. Clone the [rox-commons-maven-plugin](https://github.com/lotaris/rox-commons-maven-plugin)
-
-2. Checkout the tag `v2.2.0` and follow the `README`.
-
-3. Clone this repository.
-
-4. Run the following command
-
-```bash
-cd <projectFolder>
-mvn clean install
-```
-
-5. Put the following dependency in your pom.xml
+1. Example of usage in a pom.xml
 
 ```xml
-<dependency>
-  <groupId>com.lotaris.minirox.client</groupId>
-  <artifactId>rox-jee-itf-maven-plugin</artifactId>
-  <version>2.2.0</version>
-</dependenc>
+<plugin>
+	<groupId>com.lotaris.maven.rox.plugins</groupId>
+	<artifactId>rox-itf-maven-plugin</artifactId>
+	<version>2.2.1</version>
+	<configuration>
+		<category>Integration - ITF</category>
+		<roxConfig>${project.parent.basedir}/src/main/resources/rox.yml</roxConfig>
+		<launchUrl>http://localhost:8080/${lotaris.todolist.server.context.root}-test/itf/start?filters={filters}&amp;category={category}&amp;projectName=${project.version}</launchUrl>
+	</configuration>
+</plugin>
 ```
 
 ### Requirements
